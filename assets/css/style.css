@@ -1,0 +1,10 @@
+@import "root.css";
+@import "./layout/button.css";
+@import "./layout/header.css";
+@import "./sections/landaing.css";
+@import "./sections/about.css";
+@import "./sections/our-team.css";
+@import "./sections/services.css";
+@import "./sections/projects.css";
+@import "./sections/contact.css";
+@import "./layout/footer.css";

@@ -1,0 +1,33 @@
+.button{
+  border: none;
+  border-radius: .4rem;
+  outline: none;
+  padding: .7rem 1.2rem;
+  font-size: 1.2rem;
+}
+
+.button:hover{
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.primary-button{
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.primary-link{
+  border: none;
+  border-radius: .4rem;
+  outline: none;
+  padding: .7rem 1.2rem;
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.primary-link:hover{
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}

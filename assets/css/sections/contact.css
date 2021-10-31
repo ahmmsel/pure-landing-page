@@ -1,0 +1,48 @@
+.contact-content{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+.form #name, #email, textarea {
+  background-color: var(--primary-bg);
+  outline: none;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  resize: none;
+}
+
+.contact .image img{
+  width: 100%;
+  border-left: var(--border);
+  padding: 0 0 0 2rem;
+}
+
+@media (max-width: 769px) {
+  .contact-content{
+    display: block;
+  }
+  .contact .image img{
+    display: none;
+  }
+}

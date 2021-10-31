@@ -1,0 +1,114 @@
+.main-header{
+  background-color: var(--primary-bg);
+  position: relative;
+  position: fixed;
+  left: 0; right: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+.main-header .logo h1{
+  text-shadow: var(--text-shadow);
+  /* opacity: .6; */
+  cursor: pointer;
+}
+
+.main-header .container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-header .container *{
+  text-transform: uppercase;
+}
+
+.main-navbar .navbar-lists{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-navbar .list{
+  display: none;
+  font-size: var(--icon);
+  cursor: pointer;
+}
+
+.main-navbar .navbar-lists > li{
+  padding: 0 var(--items-padding);
+}
+
+.main-navbar .navbar-lists li > a:hover{
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  text-shadow: var(--text-shadow);
+}
+
+.main-navbar .navbar-lists li > a{
+  position: relative;
+}
+
+@media (max-width: 769px) {
+  .main-header{
+    background-color: var(--primary-bg);
+  }
+
+  .main-header .container{
+  }
+
+  .main-navbar .navbar-lists{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: var(--ease-transition);
+    -o-transition: var(--ease-transition);
+    transition: var(--ease-transition);
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+  }
+
+  .main-navbar .navbar-active{
+    -webkit-transition: var(--ease-transition) ;
+    -o-transition: var(--ease-transition) ;
+    transition: var(--ease-transition) ;
+    background-color: var(--secondery-color);
+    opacity: .8;
+  }
+
+  .main-navbar .list{
+    display: block;
+  }
+
+  .main-navbar .navbar-lists > li{
+    padding: var(--items-padding);
+  }
+
+  .main-navbar .navbar-lists li > a:hover{
+  }
+}

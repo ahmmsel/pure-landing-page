@@ -1,0 +1,135 @@
+.about{
+}
+
+.about-content{
+  -webkit-transition: var(--ease-in-transition);
+  -o-transition: var(--ease-in-transition);
+  transition: var(--ease-in-transition);
+  opacity: 0;
+}
+
+.about-animation{
+  -webkit-transition: var(--ease-in-transition);
+  -o-transition: var(--ease-in-transition);
+  transition: var(--ease-in-transition);
+  opacity: 1;
+}
+
+.about-content .intro{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-content .intro .text{
+  background-color: var(--primary-bg);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border-radius: 3rem;
+  padding: 0 0 0 2rem;
+  padding: 2rem;
+}
+
+.about-content .intro .text h1{
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+  position: relative;
+  cursor: default;
+}
+
+.about-content .intro .text h1::before{
+  content: "";
+  border-bottom: var(--border);
+  z-index: 999;
+  position: absolute;
+  top: 100%;
+  -webkit-transition: var(--ease-in-transition);
+  -o-transition: var(--ease-in-transition);
+  transition: var(--ease-in-transition);
+  width: 0;
+}
+
+.about-content .intro .text h1:hover::before{
+  -webkit-transition: var(--ease-in-transition);
+  -o-transition: var(--ease-in-transition);
+  transition: var(--ease-in-transition);
+  width: 20%;
+}
+
+.about-content .intro .text p{
+  padding: var(--items-padding) 0;
+  line-height: 2.2;
+}
+
+.about-content .intro .image img{
+  width: 100%;
+  border-right: var(--border);
+  padding: 0 2rem 0 0;
+}
+
+.active-animation{
+  -webkit-animation-name: about-animation;
+          animation-name: about-animation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes about-animation {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes about-animation {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@media (max-width: 769px) {
+  .about-content .intro{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+
+  .about-content .text{
+    padding: 2rem 0;
+  }
+  .about-content .intro .text h1{
+    text-shadow: var(--text-shadow);
+  }
+
+  .about-content .intro .text p{
+    padding: var(--items-padding) 0;
+  }
+
+  .about-content .intro .image img{
+    width: 100%;
+    border-right: none;
+    border-bottom: var(--border);
+    padding: 0 0 2rem 0;
+  }
+}

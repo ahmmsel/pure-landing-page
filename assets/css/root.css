@@ -1,0 +1,105 @@
+:root{
+  /* color */
+  --primary-bg: #606c88;
+  --secondery-bg: #f3f3f3;
+  --primary-color: #f3f3f3;
+  --secondery-color: #242b2e;
+  --border-color: #888;
+  /* color */
+
+  /* box model */
+  --items-padding: 1rem;
+  --section-margin: 10rem;
+  --sub-section-margin: 8rem;
+  --border-radius: .8rem;
+  --border: solid .1rem var(--border-color);
+  /* box model */
+
+  /* item size */
+  --icon: 2.5rem;
+  /* item size */
+
+  /* transition */
+  --main-transition: all .6s;
+  --ease-transition: ease .5s;
+  --ease-in-transition: ease-in .5s;
+  /* transition */
+
+
+  /* shadow */
+  --text-shadow: rgba(0, 0, 0, 0.5) .090rem .064rem .056rem;
+  --box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  /* shadow */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  color: var(--primary-color);
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transition: var(--main-transition);
+  text-transform: capitalize;
+  line-height: 2;
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  color: var(--primary-color);
+  -webkit-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transition: var(--main-transition);
+  text-transform: capitalize;
+  line-height: 2;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#606c88), to(#3f4c6b));
+  background-image: -o-linear-gradient(#606c88, #3f4c6b);
+  background-image: linear-gradient(#606c88, #3f4c6b);
+  background-repeat: no-repeat;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.container{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 70rem;
+}
+
+.section{
+  margin: var(--section-margin) auto;
+}
+
+.section-title{
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  margin-bottom: 3.5rem;
+  opacity: .6;
+}
+
+.section-title h1{
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+  padding: 0 var(--items-padding);
+  font-size: 2rem;
+  font-weight: 300;
+}

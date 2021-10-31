@@ -1,0 +1,34 @@
+.landaing{
+  margin: 4rem 0;
+}
+
+.landaing * {
+  text-transform: uppercase;
+}
+
+.landaing-content{
+  background-image: url("../../../images/landaing.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+.landaing-content .overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.landaing-content .overlay .text{
+  position: absolute;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.landaing-content .overlay .text *{
+  margin: 1rem 0;
+}
